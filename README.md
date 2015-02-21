@@ -1,6 +1,6 @@
 text-editor
 ============
-A simple text editor.
+A simple text editor for Meteor.
 
 Explanation
 -----------
