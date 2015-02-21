@@ -22,6 +22,8 @@ And set with:
 $('#myEditor').val('<b>hello</b>')
 ```
 
+There's a demo online, [here](http://texteditor.meteor.com).
+
 You must sanitize in the server side the html obtained, and can use for example the package ```sanitize-html```.
 
 This package is inspired in the package [Editable Text for Meteor](https://atmospherejs.com/babrahams/editable-text).
