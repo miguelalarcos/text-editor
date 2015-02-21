@@ -1,0 +1,1 @@
+@post = new Meteor.Collection('Post')

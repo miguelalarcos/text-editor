@@ -10,8 +10,15 @@ for action in actions
 Template.textEditor.helpers
   status: (action) ->
     toolbarStatus.get action
+  editable: -> '<div class="document" contenteditable="true">' + this + '</div>'
 
 Template.textEditor.events
+  'click .show-toolbar': (e,t)->
+    el = $(t.find('.editor-tools'))
+    if el.hasClass('show')
+      el.removeClass('show')
+    else
+      el.addClass('show')
   'click .document': (e, t)->
     for action in actions
       status = document.queryCommandValue(action)

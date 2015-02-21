@@ -3,6 +3,11 @@
 </body>
 
 <template name="home">
-    {{> textEditor id='myEditor'}}
-    <button id="extract" class="ui button">extract</button>
+    <button class="ui button new">Add</button>
+    {{#each posts}}
+        {{#with content}}
+            {{> textEditor}}
+        {{/with}}
+        <button _id={{this._id}} class="ui button save">Save</button>
+    {{/each}}
 </template>

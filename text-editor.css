@@ -15,3 +15,11 @@ div.ui.button a{
     width: 600px;
     border: 2px solid indianred;
 }
+
+.editor-tools{
+    display: none;
+}
+
+.show {
+    display: block;
+}

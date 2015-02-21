@@ -9,3 +9,5 @@ autopublish
 insecure
 coffeescript
 miguelalarcos:text-editor
+djedi:sanitize-html
+matb33:collection-hooks
