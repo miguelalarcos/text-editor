@@ -1,0 +1,76 @@
+<template name="textEditor">
+    <div class="text-editor">
+        <div class="document" contenteditable="true"></div>
+        <div class="editor-tools">
+            <div class="ui dropdown">
+                <div class="ui button"><i class="font icon"></i></div>
+                <div class="menu">
+                    <div class="action item"><a style="font-family:'Serif'" data-edit="fontName Serif">Serif</a></div>
+                    <div class="action item"><a style="font-family:'Sans'" data-edit="fontName Sans">Sans</a></div>
+                    <div class="action item"><a style="font-family:'Arial'" data-edit="fontName Arial">Arial</a></div>
+                    <div class="action item"><a style="font-family:'Arial Black'" data-edit="fontName Arial Black">Arial Black</a></div>
+                    <div class="action item"><a style="font-family:'Courier'" data-edit="fontName Courier">Courier</a></div>
+                    <div class="action item"><a style="font-family:'Courier New'" data-edit="fontName Courier New">Courier New</a></div>
+                    <div class="action item"><a style="font-family:'Comic Sans MS'" data-edit="fontName Comic Sans MS">Comic Sans MS</a></div>
+                    <div class="action item"><a style="font-family:'Helvetica'" data-edit="fontName Helvetica">Helvetica</a></div>
+                    <div class="action item"><a style="font-family:'Impact'" data-edit="fontName Impact">Impact</a></div>
+                    <div class="action item"><a style="font-family:'Lucida Grande'" data-edit="fontName Lucida Grande">Lucida Grande</a></div>
+                    <div class="action item"><a style="font-family:'Lucida Sans'" data-edit="fontName Lucida Sans">Lucida Sans</a></div>
+                    <div class="action item"><a style="font-family:'Tahoma'" data-edit="fontName Tahoma">Tahoma</a></div>
+                    <div class="action item"><a style="font-family:'Times'" data-edit="fontName Times">Times</a></div>
+                    <div class="action item"><a style="font-family:'Times New Roman'" data-edit="fontName Times New Roman">Times New Roman</a></div>
+                    <div class="action item"><a style="font-family:'Verdana'" data-edit="fontName Verdana">Verdana</a></div>
+                </div>
+            </div>
+            <div class="ui dropdown">
+                <div class="ui button"><i class="text height icon"></i></div>
+                <div class="menu">
+                    <div class="action item"><a data-edit="fontSize 5"><span style="font-size:x-large;">Huge</span></a></div>
+                    <div class="action item"><a data-edit="fontSize 4"><span style="font-size:large;">Very Large</span></a></div>
+                    <div class="action item"><a data-edit="fontSize 3"><span style="font-size:normal;">Large</span></a></div>
+                    <div class="action item"><a data-edit="fontSize 2"><span style="font-size:small;">Normal</span></a></div>
+                    <div class="action item"><a data-edit="fontSize 1"><span style="font-size:x-small;">Small</span></a></div>
+                </div>
+            </div>
+            <div class="ui icon buttons">
+                <div class="ui button action "><a data-edit="superscript" title="Superscript"><i class="superscript icon"></i></a></div>
+                <div class="ui button action "><a data-edit="subscript" title="Subscript"><i class="subscript icon"></i></a></div>
+            </div>
+            <div class="ui icon buttons">
+                <div class="ui button action "><a data-edit="bold"><i class="bold icon"></i></a></div>
+                <div class="ui button action "><a data-edit="underline"><i class="underline icon"></i></a></div>
+                <div class="ui button action "><a data-edit="italic"><i class="italic icon"></i></a></div>
+                <div class="ui button action "><a data-edit="strikethrough"><i class="strikethrough icon"></i></a></div>
+            </div>
+            <div class="ui icon buttons">
+                <div class="ui button action "><a data-edit="insertunorderedlist" title="Bullet list"><i class="unordered list icon"></i></a></div>
+                <div class="ui button action "><a data-edit="insertorderedlist" title="Number list"><i class="ordered list icon"></i></a></div>
+                <div class="ui button action "><a data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="outdent icon"></i></a></div>
+                <div class="ui button action "><a data-edit="indent" title="Indent (Tab)"><i class="indent icon"></i></a></div>
+            </div>
+            <br>
+            <div class="ui icon buttons">
+                <div class="ui button action "><a data-edit="justifyleft"><i class="align left icon"></i></a></div>
+                <div class="ui button action "><a data-edit="justifycenter"><i class="align center icon"></i></a></div>
+                <div class="ui button action "><a data-edit="justifyright"><i class="align right icon"></i></a></div>
+                <div class="ui button action "><a data-edit="justifyfull"><i class="align justify icon"></i></a></div>
+            </div>
+            <div class="ui icon buttons">
+                <div unselectable="on" class="ui button action " title="Hyperlink"><i class="linkify icon"></i>
+                    <div class="ui input">
+                        <input class="url" placeholder="URL" type="text"/>
+                    </div>
+                </div>
+                <div class="ui button action "><a data-edit="unlink" title="Remove Hyperlink"><i class="unlink icon"></i></a></div>
+            </div>
+            <div class="ui icon buttons">
+                <div class="ui button action "><a data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="reply icon"></i></a></div>
+                <div class="ui button action "><a data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="share icon"></i></a></div>
+            </div>
+            <div class="ui icon buttons">
+                <div class="ui button color"><a title="Color">color</a></div>
+            </div>
+        </div>
+    </div>
+</template>
+

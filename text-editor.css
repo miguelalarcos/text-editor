@@ -1,0 +1,12 @@
+div.ui.button{
+    background-color: indianred;
+}
+
+div.ui.button a{
+    color: black;
+}
+
+.text-editor .document{
+    height: 150px;
+    width: 500px;
+}
