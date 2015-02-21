@@ -2,11 +2,16 @@ div.ui.button{
     background-color: indianred;
 }
 
+div.ui.button.active{
+    background-color: lightgreen;
+}
+
 div.ui.button a{
     color: black;
 }
 
 .text-editor .document{
     height: 150px;
-    width: 500px;
+    width: 600px;
+    border: 2px solid indianred;
 }
