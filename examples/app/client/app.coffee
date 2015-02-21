@@ -1,4 +1,5 @@
 Template.home.events
   'click #extract': (e,t)->
-    console.log $('.text-editor').val()
+    console.log $('#myEditor').val()
+    $('#myEditor').val('<b>hello</b>')
 

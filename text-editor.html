@@ -1,5 +1,5 @@
 <template name="textEditor">
-    <div class="text-editor">
+    <div id={{this.id}} class="widget text-editor">
         <div class="document" contenteditable="true"></div>
         <div class="editor-tools">
             <div class="ui dropdown">
@@ -56,7 +56,7 @@
                 <div class="ui button action {{status 'justifyfull'}}"><a data-edit="justifyfull"><i class="align justify icon"></i></a></div>
             </div>
             <div class="ui icon buttons">
-                <div unselectable="on" class="ui button action " title="Hyperlink"><i class="linkify icon"></i>
+                <div class="ui button " title="Hyperlink"><i class="linkify icon"></i>
                     <div class="ui input">
                         <input class="url" placeholder="URL" type="text"/>
                     </div>

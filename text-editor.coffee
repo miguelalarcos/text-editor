@@ -3,6 +3,7 @@ actions = ['bold', 'underline', 'italic', 'strikethrough', 'insertunorderedlist'
            'insertorderedlist', 'superscript', 'subscript',
            #'outdent', 'indent',
            'justifyleft', 'justifycenter', 'justifyright', 'justifyfull']
+
 for action in actions
   toolbarStatus.set action, null
 
@@ -16,7 +17,7 @@ Template.textEditor.events
       status = document.queryCommandValue(action)
       el = $(".editor-tools div>a[data-edit='" + action + "']")
       el = el.parent()
-      console.log action, status
+
       if status == 'true'
         toolbarStatus.set action, 'active'
       else
@@ -32,7 +33,6 @@ Template.textEditor.events
     if arg == ''
       arg = null
     document.execCommand(command, false, arg)
-
     status = document.queryCommandValue(action)
     if status == true # 'active'
       toolbarStatus.set(command, null)
@@ -41,10 +41,10 @@ Template.textEditor.events
 
   'mousedown .ui.dropdown': (e,t)->
     e.preventDefault()
-  'click div>i.linkify': (e,t)->
-    x = $(t.find('input.url')).val()
 
-    document.execCommand('createLink', false, x)
+  'click div>i.linkify': (e,t)->
+    url = $(t.find('input.url')).val()
+    document.execCommand('createLink', false, url)
 
 $.valHooks['textEditor'] =
   get : (el)->
