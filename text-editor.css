@@ -23,3 +23,8 @@ div.ui.button a{
 .show {
     display: block;
 }
+
+.show-toolbar {
+    width: 5px;
+    height: 5px;
+}

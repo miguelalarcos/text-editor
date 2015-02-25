@@ -8,6 +8,7 @@ meteor-platform
 autopublish
 insecure
 coffeescript
-miguelalarcos:text-editor
 djedi:sanitize-html
 matb33:collection-hooks
+miguelalarcos:text-editor
+sewdn:collection-behaviours

@@ -4,10 +4,15 @@
 
 <template name="home">
     <button class="ui button new">Add</button>
+    <br>
+    <br>
     {{#each posts}}
         {{#with content}}
             {{> textEditor}}
         {{/with}}
         <button _id={{this._id}} class="ui button save">Save</button>
+        <button _id={{this._id}} class="ui button remove">Remove</button>
+        <br>
+        <br>
     {{/each}}
 </template>
