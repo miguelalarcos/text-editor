@@ -1,6 +1,6 @@
 Package.describe({
   name: 'miguelalarcos:text-editor',
-  version: '0.1.2',
+  version: '0.1.3',
   summary: 'A simple text editor',
   git: 'https://github.com/miguelalarcos/text-editor.git',
   documentation: 'README.md'
@@ -9,6 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
   api.use('coffeescript', 'client');
+  api.use('less', 'client');
   api.use('templating', 'client');
   api.use('jquery', 'client');
   api.use('reactive-dict', 'client');
@@ -18,5 +19,5 @@ Package.onUse(function(api) {
   api.addFiles('text-editor.html', 'client');
   api.addFiles('text-editor.coffee', 'client');
   api.addFiles('text-editor.css', 'client');
-
+  api.addFiles('text-editor.less', 'client');
 });

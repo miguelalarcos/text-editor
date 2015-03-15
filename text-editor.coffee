@@ -34,9 +34,7 @@ Template.textEditor.events
     el = $(e.currentTarget)
     el_a = el.find('a')
     command_arg = $(el_a).attr('data-edit')
-    command_arg = command_arg.split(' ')
-    command = command_arg[0]
-    arg = command_arg[1]
+    [command, arg] = command_arg.split(' ')
     if arg == ''
       arg = null
     document.execCommand(command, false, arg)

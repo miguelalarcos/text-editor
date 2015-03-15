@@ -2,9 +2,6 @@ div.ui.button{
     background-color: indianred;
 }
 
-div.ui.button.active{
-    background-color: lightgreen;
-}
 
 div.ui.button a{
     color: black;
