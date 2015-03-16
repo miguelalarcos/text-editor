@@ -1,6 +1,6 @@
 Package.describe({
   name: 'miguelalarcos:text-editor',
-  version: '0.1.3',
+  version: '0.1.4',
   summary: 'A simple text editor',
   git: 'https://github.com/miguelalarcos/text-editor.git',
   documentation: 'README.md'
