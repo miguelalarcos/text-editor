@@ -10,7 +10,9 @@ for action in actions
 Template.textEditor.helpers
   status: (action) ->
     toolbarStatus.get action
-  editable: -> '<div class="document" contenteditable="true">' + this + '</div>'
+  editable: ->
+    content = this.value or this
+    '<div class="document" contenteditable="true">' + content + '</div>'
 
 Template.textEditor.events
   'click .show-toolbar': (e,t)->
